@@ -1,0 +1,72 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital@0;1&family=Roboto&display=swap');
+
+body {
+  background: radial-gradient(
+    circle,
+    rgba(238, 174, 202, 1) 0%,
+    rgba(148, 187, 233, 1) 100%
+  );
+  font-family: 'Roboto', sans-serif;
+  display: flex;
+}
+
+.container {
+  min-height: 100px;
+  width: 70%;
+  border: 1px solid grey;
+  text-align: justify;
+  padding: 10px 25px;
+  border-radius: 5px;
+  box-shadow: 10px 12px 13px -5px rgba(94, 54, 158, 0.75);
+  -webkit-box-shadow: 10px 12px 13px -5px rgba(94, 54, 158, 0.75);
+  -moz-box-shadow: 10px 12px 13px -5px rgba(94, 54, 158, 0.75);
+  margin: auto;
+  z-index: 1;
+  background-color: rgb(117, 110, 110);
+}
+
+.container h2 {
+  margin-top: 0;
+}
+
+.container .fact {
+  color: rgb(192, 222, 248);
+}
+
+.image {
+  position: absolute;
+  top: 35%;
+  left: 0;
+  width: 100%;
+}
+
+@media screen and (max-width: 600px) {
+  .container, .btn {
+    font-size: 13px;
+  }
+  .image {
+    top: 35%;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .container, .btn {
+    font-size: 10px;
+    text-align: center;
+  }
+  .image {
+    top: 45%;
+  }
+}
+
+.btn {
+  width: 100%;
+  cursor: pointer;
+  font-family: 'Nunito', sans-serif;
+  background-color: rgb(234, 245, 156);
+  border: 1px solid rgb(117, 110, 110);
+  border-radius: 4px;
+  box-shadow: 1px 2px rgba(94, 54, 158, 0.65);
+  -webkit-box-shadow: 1px 2px rgba(94, 54, 158, 0.65);
+  -moz-box-shadow: 1px 2px rgba(94, 54, 158, 0.65);
+}
