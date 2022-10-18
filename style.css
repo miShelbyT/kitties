@@ -11,11 +11,11 @@ body {
 }
 
 .container {
-  min-height: 100px;
+  min-height: 200px;
   width: 70%;
   border: 1px solid grey;
   text-align: justify;
-  padding: 10px 25px;
+  padding: 20px 25px;
   border-radius: 5px;
   box-shadow: 10px 12px 13px -5px rgba(94, 54, 158, 0.75);
   -webkit-box-shadow: 10px 12px 13px -5px rgba(94, 54, 158, 0.75);
