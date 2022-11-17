@@ -1,14 +1,15 @@
-// 'use strict';
-const factDiv = document.createElement('div')
 const title = document.createElement('h2')
-const catFact = document.createElement('h3')
-const kitties = document.createElement('img')
-const newFact = document.createElement('button')
 const today = new Date(Date.now())
+
+const factDiv = document.createElement('div')
+const catFact = document.createElement('h3')
+const newFact = document.createElement('button')
+
+const kitties = document.createElement('img')
+
 const options = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' };
 
-title.innerText = `📆 Today is:
-${today.toLocaleDateString(undefined, options)}
+title.innerText = `📆 Today is: ${today.toLocaleDateString(undefined, options)}
 Here Is Your Daily Cat Fact:`
 catFact.className = 'fact'
 factDiv.className = 'container'

@@ -31,6 +31,7 @@ body {
 
 .container .fact {
   color: rgb(192, 222, 248);
+  font-size: large;
 }
 
 .image {
@@ -63,6 +64,7 @@ body {
   width: 100%;
   cursor: pointer;
   font-family: 'Nunito', sans-serif;
+  font-size: medium;
   background-color: rgb(234, 245, 156);
   border: 1px solid rgb(117, 110, 110);
   border-radius: 4px;
