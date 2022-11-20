@@ -19,7 +19,7 @@ newFact.className = 'btn'
 kitties.src = "https://thumbs.dreamstime.com/b/moggie-kittens-28062021.jpg"
 kitties.alt = "kittens in cups"
 
-newFact.innerText = "I'd Like A New Cat Fact, Please"
+newFact.innerText = "\u{1F408} I'd Like A New Cat Fact, Please \u{1F408}"
 
 factDiv.append(title, catFact, newFact)
 document.body.append(kitties, factDiv)
