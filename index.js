@@ -6,6 +6,8 @@ const catFact = document.createElement('h3')
 const newFact = document.createElement('button')
 
 const kitties = document.createElement('img')
+const shoutOut = document.createElement('small')
+const credit = document.createElement("a")
 
 const options = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' };
 
@@ -16,13 +18,17 @@ factDiv.className = 'container'
 kitties.className = 'image'
 newFact.className = 'btn'
 
-kitties.src = "https://thumbs.dreamstime.com/b/moggie-kittens-28062021.jpg"
-kitties.alt = "kittens in cups"
+kitties.src = "the-lucky-neko-uePn9YCTCY0-unsplash.jpg"
+kitties.alt = "kittens on the floor"
+shoutOut.textContent = 'Cute kitties pic by: '
+credit.href =  "https://unsplash.com/es/@theluckyneko?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText"
+credit.textContent = "The Lucky Neko on Unsplash"
 
 newFact.innerText = "\u{1F408} I'd Like A New Cat Fact, Please \u{1F408}"
 
 factDiv.append(title, catFact, newFact)
-document.body.append(kitties, factDiv)
+document.body.prepend(kitties, factDiv)
+document.querySelector('footer').append(shoutOut, credit)
 
 
 const fetchMeme = async () => {
