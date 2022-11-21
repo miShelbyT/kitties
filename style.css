@@ -1,5 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Nunito:ital@0;1&family=Roboto&display=swap');
 
+:root {
+  --shadow-purple: rgba(94, 54, 158, 0.75);
+  --shadow-grey: rgba(192, 222, 248, 0.65);
+  --robins-egg: rgb(192, 222, 248);
+  --bg-container: rgb(117, 110, 110);
+  --header-footer: rgb(42, 16, 62);
+}
+
 body {
   background: radial-gradient(
     circle,
@@ -20,20 +28,21 @@ body {
   text-align: justify;
   padding: 20px 25px;
   border-radius: 5px;
-  box-shadow: 10px 12px 13px -5px rgba(94, 54, 158, 0.75);
-  -webkit-box-shadow: 10px 12px 13px -5px rgba(94, 54, 158, 0.75);
-  -moz-box-shadow: 10px 12px 13px -5px rgba(94, 54, 158, 0.75);
+  box-shadow: 10px 12px 13px -5px var(--shadow-purple);
+  -webkit-box-shadow: 10px 12px 13px -5px var(--shadow-purple);
+  -moz-box-shadow: 10px 12px 13px -5px var(--shadow-purple);
   margin: auto;
   z-index: 1;
-  background-color: rgb(117, 110, 110);
+  background-color: var(--bg-container);
 }
 
 .container h2 {
   margin-top: 0;
+  color: var(--header-footer);
 }
 
 .container .fact {
-  color: rgb(192, 222, 248);
+  color: var(--robins-egg);
   font-size: large;
 }
 
@@ -43,6 +52,12 @@ body {
   left: 0;
   width: 100%;
   padding-bottom: 2.5rem;
+  transition: width 2s, left 2s;
+}
+
+.image:hover {
+  width: 115%;
+  left: -5%;
 }
 
 @media screen and (max-width: 600px) {
@@ -75,12 +90,21 @@ body {
   cursor: pointer;
   font-family: 'Nunito', sans-serif;
   font-size: medium;
+  color: rgb(94, 54, 158);
   background-color: rgb(234, 245, 156);
   border: 1px solid rgb(117, 110, 110);
   border-radius: 4px;
-  box-shadow: 1px 2px rgba(94, 54, 158, 0.65);
-  -webkit-box-shadow: 1px 2px rgba(94, 54, 158, 0.65);
-  -moz-box-shadow: 1px 2px rgba(94, 54, 158, 0.65);
+  box-shadow: 1px 2px var(--shadow-purple);
+  -webkit-box-shadow: 1px 2px var(--shadow-purple);
+  -moz-box-shadow: 1px 2px var(--shadow-purple);
+}
+
+.btn:hover {
+  color: rgb(234, 245, 156);
+  background-color: var(--shadow-purple);
+  box-shadow: 1px 2px var(--shadow-grey);
+  -webkit-box-shadow: 1px 2px var(--shadow-grey);
+  -moz-box-shadow: 1px 2px var(--shadow-grey);
 }
 
 footer {
@@ -92,7 +116,7 @@ footer {
 
 a, small {
   font-size: small;
-  color: rebeccapurple;
+  color: var(--header-footer);
 }
 
 

@@ -3,7 +3,7 @@ const today = new Date(Date.now())
 
 const factDiv = document.createElement('div')
 const catFact = document.createElement('h3')
-const newFact = document.createElement('button')
+const NewFactBtn = document.createElement('button')
 
 const kitties = document.createElement('img')
 const shoutOut = document.createElement('small')
@@ -16,7 +16,7 @@ Here Is Your Daily Cat Fact:`
 catFact.className = 'fact'
 factDiv.className = 'container'
 kitties.className = 'image'
-newFact.className = 'btn'
+NewFactBtn.className = 'btn'
 
 kitties.src = "the-lucky-neko-uePn9YCTCY0-unsplash.jpg"
 kitties.alt = "kittens on the floor"
@@ -24,9 +24,9 @@ shoutOut.textContent = 'Cute kitties pic by: '
 credit.href =  "https://unsplash.com/es/@theluckyneko?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText"
 credit.textContent = "The Lucky Neko on Unsplash"
 
-newFact.innerText = "\u{1F408} I'd Like A New Cat Fact, Please \u{1F408}"
+NewFactBtn.innerText = "\u{1F408} I'd Like A New Cat Fact, Please \u{1F408}"
 
-factDiv.append(title, catFact, newFact)
+factDiv.append(title, catFact, NewFactBtn)
 document.body.prepend(kitties, factDiv)
 document.querySelector('footer').append(shoutOut, credit)
 
@@ -37,7 +37,7 @@ const fetchMeme = async () => {
   catFact.innerText = res.fact
 }
 
-newFact.addEventListener("click", fetchMeme)
+NewFactBtn.addEventListener("click", fetchMeme)
 
 fetchMeme()
 
