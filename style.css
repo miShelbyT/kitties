@@ -6,6 +6,7 @@
   --robins-egg: rgb(192, 222, 248);
   --bg-container: rgb(117, 110, 110);
   --header-footer: rgb(42, 16, 62);
+  --light-yellow: rgb(234, 245, 156);
 }
 
 body {
@@ -39,6 +40,10 @@ body {
 .container h2 {
   margin-top: 0;
   color: var(--header-footer);
+}
+
+.container h3:hover, .container h2:hover {
+  color: var(--light-yellow);
 }
 
 .container .fact {
@@ -91,7 +96,7 @@ body {
   font-family: 'Nunito', sans-serif;
   font-size: medium;
   color: rgb(94, 54, 158);
-  background-color: rgb(234, 245, 156);
+  background-color: var(--light-yellow);
   border: 1px solid rgb(117, 110, 110);
   border-radius: 4px;
   box-shadow: 1px 2px var(--shadow-purple);
