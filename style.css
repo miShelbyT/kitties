@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Nunito:ital@0;1&family=Roboto&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Nunito:ital@0;1&family=Roboto&display=swap");
 
 :root {
   --shadow-purple: rgba(94, 54, 158, 0.75);
@@ -14,11 +14,11 @@ body {
     rgba(238, 174, 202, 1) 0%,
     rgba(148, 187, 233, 1) 100%
   );
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   display: flex;
-  overflow-y:hidden;
-  overflow-x:hidden;
-  height:100%;
+  overflow-y: hidden;
+  overflow-x: hidden;
+  height: 100%;
 }
 
 .container {
@@ -40,7 +40,8 @@ body {
   color: var(--header-footer);
 }
 
-.container h1:hover, .container h2:hover {
+.container h1:hover,
+.container h2:hover {
   color: var(--light-yellow);
 }
 
@@ -51,9 +52,10 @@ body {
 
 .image {
   position: absolute;
-  top: 35%;
-  left: 0;
-  width: 100%;
+  max-height: 970px;
+  top: 20%;
+  left: 5%;
+  width: 90%;
   padding-bottom: 2.5rem;
   transition: transform 2s, left 2s;
 }
@@ -64,27 +66,40 @@ body {
 }
 
 @media screen and (max-width: 600px) {
-  .container, .btn {
+  .container,
+  .btn {
     font-size: 13px;
   }
   .image {
     top: 35%;
   }
+  span.icon {display:inline-block}
+  span.text {display:none}
 }
 
-@media screen and (max-width: 400px) {
-  .container, .btn {
+@media screen and (min-width: 600px) {
+  span.icon {display:none}
+  span.text {display:inline-block}
+}
+
+@media screen and (max-width: 500px) {
+  .container,
+  .btn {
     font-size: 10px;
     text-align: center;
+    display: inline;
   }
-  .image {
-    top: 45%;
-  }
+  
 }
 
+/* @media screen and (max-width: 300px) {
+  
+} */
+
 @media screen and (min-width: 850px) {
-  footer a, footer small {
-    color: aliceblue;
+  footer a,
+  footer small {
+    color: white;
   }
 }
 
@@ -97,9 +112,11 @@ body {
 }
 
 .btn {
-  width: 100%;
+  text-align: center;
+  margin: 7px;
+  width: 45%;
   cursor: pointer;
-  font-family: 'Nunito', sans-serif;
+  font-family: "Nunito", sans-serif;
   font-size: medium;
   border: 1px solid rgb(117, 110, 110);
   border-radius: 4px;
@@ -117,9 +134,8 @@ footer {
   text-align: center;
 }
 
-a, small {
+a,
+small {
   font-size: small;
   color: var(--header-footer);
 }
-
-
