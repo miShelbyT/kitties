@@ -38,6 +38,7 @@ const fetchMeme = async () => {
 }
 
 NewFactBtn.addEventListener("click", fetchMeme)
+NewFactBtn.addEventListener("touchstart", fetchMeme)
 
 fetchMeme()
 
