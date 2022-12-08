@@ -1,5 +1,5 @@
-const title = document.createElement('h2')
-const today = new Date(Date.now())
+const title = document.createElement('h1')
+const today = document.createElement('h2')
 
 const factDiv = document.createElement('div')
 const catFact = document.createElement('h3')
@@ -11,8 +11,8 @@ const credit = document.createElement("a")
 
 const options = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' };
 
-title.innerText = `📆 Today is ${today.toLocaleDateString(undefined, options)}
-Here Is Your Daily Cat Fact:`
+today.textContent = `📆 Today is ${new Date(Date.now()).toLocaleDateString(undefined, options)}`
+title.innerText = "Here Is Your Daily Cat Fact:"
 catFact.className = 'fact'
 factDiv.className = 'container'
 kitties.className = 'image'
@@ -26,7 +26,7 @@ credit.textContent = "The Lucky Neko on Unsplash"
 
 NewFactBtn.innerText = "\u{1F408} I'd Like A New Cat Fact, Please \u{1F408}"
 
-factDiv.append(title, catFact, NewFactBtn)
+factDiv.append(today, title, catFact, NewFactBtn)
 document.body.prepend(kitties, factDiv)
 document.querySelector('footer').append(shoutOut, credit)
 
@@ -44,6 +44,7 @@ fetchMeme()
 
 
 
-
+// TODO: cycle through a series of photos (3-4?)
+// TODO: ask user for their favorite color and adjust header accordingly
 
 

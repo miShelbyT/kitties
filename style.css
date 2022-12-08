@@ -5,7 +5,7 @@
   --shadow-grey: rgba(192, 222, 248, 0.65);
   --robins-egg: rgb(192, 222, 248);
   --bg-container: rgb(117, 110, 110);
-  --header-footer: rgb(42, 16, 62);
+  --header-footer: #000;
   --light-yellow: rgb(234, 245, 156);
 }
 
@@ -26,7 +26,6 @@ body {
   min-height: 200px;
   width: 70%;
   border: 1px solid grey;
-  text-align: justify;
   padding: 20px 25px;
   border-radius: 5px;
   box-shadow: 10px 12px 13px -5px var(--shadow-purple);
@@ -42,7 +41,7 @@ body {
   color: var(--header-footer);
 }
 
-.container h3:hover, .container h2:hover {
+.container h1:hover, .container h2:hover {
   color: var(--light-yellow);
 }
 
