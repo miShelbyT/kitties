@@ -11,7 +11,7 @@ const credit = document.createElement("a")
 
 const options = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' };
 
-title.innerText = `📆 Today is: ${today.toLocaleDateString(undefined, options)}
+title.innerText = `📆 Today is ${today.toLocaleDateString(undefined, options)}
 Here Is Your Daily Cat Fact:`
 catFact.className = 'fact'
 factDiv.className = 'container'
