@@ -71,23 +71,37 @@ body {
     font-size: 13px;
   }
   .image {
-    top: 35%;
+    top: 65%;
   }
-  span.icon {display:inline-block}
-  span.text {display:none}
+  span.icon {
+    display:inline-block
+  }
+  span.text {
+    display:none
+  }
 }
 
 @media screen and (min-width: 600px) {
-  span.icon {display:none}
-  span.text {display:inline-block}
+  span.icon {
+    display:none
+  }
+  span.text {
+    display:inline-block
+  }
+  .image {
+    top: 45%;
+  }
 }
 
-@media screen and (max-width: 500px) {
+@media screen and (min-width: 500px) {
   .container,
   .btn {
     font-size: 10px;
     text-align: center;
     display: inline;
+  }
+  .image {
+    top: 45%;
   }
   
 }
