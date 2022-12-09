@@ -1,6 +1,8 @@
-import { API_KEY } from "./config.js"
+// import { API_KEY } from "./config.js"
 
-const URL = `https://api.unsplash.com/photos/random?Accept-Version=v1&client_id=${API_KEY}&username=theluckyneko`
+const encryptedKey = process.env.API_KEY
+
+const URL = `https://api.unsplash.com/photos/random?Accept-Version=v1&client_id=${encryptedKey}&username=theluckyneko`
 
 const title = document.createElement('h1')
 const today = document.createElement('h2')
