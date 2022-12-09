@@ -1,4 +1,4 @@
-// import { API_KEY } from "./config.js"
+import { API_KEY } from "./config.js"
 
 const URL = `https://api.unsplash.com/photos/random?Accept-Version=v1&client_id=${API_KEY}&username=theluckyneko`
 
