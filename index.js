@@ -1,5 +1,3 @@
-const URL = `https://api.unsplash.com/photos/random?Accept-Version=v1&client_id=${process.env.API_KEY}&username=theluckyneko`
-
 const title = document.createElement('h1')
 const today = document.createElement('h2')
 
@@ -39,12 +37,12 @@ factDiv.append(today, title, catFact, NewFactBtn, NewCatImgBtn, factIcon, imgIco
 document.body.prepend(factDiv)
 document.querySelector('footer').append(shoutOut, credit)
 
+// using netlify function to fetch unsplash img
 const fetchCatPic = async () => {
-  const resp = await fetch(URL)
+  const resp = await fetch('/.netlify/functions/fetch-unsplash')
   const result = await resp.json()
-  
-  kitties.src = result.urls.small
-  kitties.alt = result.alt_description
+  kitties.src = result.message.urls.small
+  kitties.alt = result.message.alt_description
 
 }
 

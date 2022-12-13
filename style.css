@@ -61,8 +61,8 @@ body {
 }
 
 .image:hover {
-  transform: scale(1.15);
-  left: -5%;
+  transform: scale(1.25);
+  /* left: -5%; */
 }
 
 @media screen and (max-width: 600px) {
@@ -101,7 +101,7 @@ body {
     display: inline;
   }
   .image {
-    top: 45%;
+    top: 40%;
   }
   
 }
