@@ -1,6 +1,7 @@
 // Docs on event and context https://docs.netlify.com/functions/build/#code-your-function-2
 const handler = async (event) => {
   const API_KEY = process.env.API_KEY
+  console.log("looking for this value in my logs: ", API_KEY)
   const URL = `https://api.unsplash.com/photos/random?Accept-Version=v1&client_id=${API_KEY}&username=theluckyneko`
 
   try {
