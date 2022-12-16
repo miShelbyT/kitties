@@ -43,7 +43,6 @@ const fetchCatPic = async () => {
   const result = await resp.json()
   kitties.src = result.message.urls.small
   kitties.alt = result.message.alt_description
-
 }
 
 
