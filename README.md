@@ -1,6 +1,8 @@
+## 🐈 KITTIES 🐈
+
 1. Project Description
 
-Thinking, thinking..... ChatGPT comes to the rescue!!!
+Thinking, thinking..... and ChatGPT comes to the rescue!!!
 "Welcome to our fabulous feline haven, where we dish out cat facts like they're treats from the fancy feast. From the cute and cuddly to the curious and quirky, we've got all the purrfect details on our furry overlords. So sit back, relax, and let us whisker you away into the wonderful world of cats!"
 
 This project was created using HTML, CSS and JavaScript. It pulls from two APIs: 
