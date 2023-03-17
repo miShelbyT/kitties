@@ -12,7 +12,7 @@ This project was created using HTML, CSS and JavaScript. It pulls from two APIs:
 
 2. Installation Instructions
 
-If you would like to run this application, you must do the following:
+If you would like to run this application, you'll need to do the following:
 * Fork the Respository
 * Clone to your local environment
 * Open the html file in your browser.
