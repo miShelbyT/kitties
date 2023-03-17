@@ -1,7 +1,7 @@
 const title = document.createElement('h1')
 const today = document.createElement('h2')
 
-const factDiv = document.createElement('div')
+const factDiv = document.querySelector('.container')
 const catFact = document.createElement('p')
 const NewFactBtn = document.createElement('span')
 const NewCatImgBtn = document.createElement('span')
@@ -16,7 +16,6 @@ const options = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric
 today.textContent = `📆 Today is ${new Date(Date.now()).toLocaleDateString(undefined, options)}`
 title.innerText = "Here Is Your Daily Cat Fact:"
 catFact.className = 'fact'
-factDiv.className = 'container'
 NewFactBtn.classList.add('btn', 'text')
 NewCatImgBtn.classList.add('btn', 'text')
 factIcon.classList.add('btn', 'icon')
@@ -33,8 +32,7 @@ NewCatImgBtn.innerText = "\u{1F408} I'd Like A New Cat IMAGE, Please \u{1F408}"
 factIcon.innerText = "\u{1F9E0} CAT FACT"
 imgIcon.innerText = "\u{1F408} CAT IMAGE"
 
-factDiv.append(today, title, catFact, NewFactBtn, NewCatImgBtn, factIcon, imgIcon)
-document.body.prepend(factDiv)
+factDiv.prepend(today, title, catFact, NewFactBtn, NewCatImgBtn, factIcon, imgIcon)
 document.querySelector('footer').append(shoutOut, credit)
 
 // using netlify function to fetch unsplash img

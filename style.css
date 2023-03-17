@@ -19,14 +19,15 @@ body {
   overflow-y: hidden;
   overflow-x: hidden;
   height: 100%;
+  padding: 25px;
 }
 
 .container {
   min-height: 200px;
-  width: 70%;
+  max-width: 970px;
   border: 1px solid grey;
   padding: 20px 25px;
-  border-radius: 5px;
+  border-radius: 25px;
   box-shadow: 10px 12px 13px -5px var(--shadow-purple);
   -webkit-box-shadow: 10px 12px 13px -5px var(--shadow-purple);
   -moz-box-shadow: 10px 12px 13px -5px var(--shadow-purple);
@@ -48,74 +49,20 @@ body {
 .container .fact {
   color: var(--light-yellow);
   font-size: large;
+  text-align: center;
 }
 
 .image {
-  position: absolute;
-  max-width: 970px;
-  top: 20%;
-  left: 5%;
+  margin-top: 15px;
   width: 90%;
-  padding-bottom: 2.5rem;
+  border-radius: 2px;
   transition: transform 2s, left 2s;
 }
 
 .image:hover {
-  transform: scale(1.25);
-  /* left: -5%; */
+  transform: scale(1.05);
 }
 
-@media screen and (max-width: 600px) {
-  .container,
-  .btn {
-    font-size: 13px;
-  }
-  .image {
-    top: 65%;
-  }
-  span.icon {
-    display:inline-block
-  }
-  span.text {
-    display:none
-  }
-}
-
-@media screen and (min-width: 600px) {
-  span.icon {
-    display:none
-  }
-  span.text {
-    display:inline-block
-  }
-  .image {
-    top: 45%;
-  }
-}
-
-@media screen and (min-width: 500px) {
-  .container,
-  .btn {
-    font-size: 10px;
-    text-align: center;
-    display: inline;
-  }
-  .image {
-    top: 40%;
-  }
-  
-}
-
-/* @media screen and (max-width: 300px) {
-  
-} */
-
-@media screen and (min-width: 850px) {
-  footer a,
-  footer small {
-    color: white;
-  }
-}
 
 .btn:hover {
   color: rgb(94, 54, 158);
@@ -152,4 +99,43 @@ a,
 small {
   font-size: small;
   color: var(--header-footer);
+}
+
+
+@media screen and (max-width: 600px) {
+  .container,
+  .btn {
+    font-size: 13px;
+  }
+  span.icon {
+    display:inline-block
+  }
+  span.text {
+    display:none
+  }
+}
+
+ @media screen and (min-width: 600px) {
+  span.icon {
+    display:none
+  }
+  span.text {
+    display:inline-block
+  }
+}
+
+@media screen and (min-width: 500px) {
+  .container,
+  .btn {
+    font-size: 15px;
+    text-align: center;
+    display: inline;
+  }
+} 
+
+@media screen and (min-width: 850px) {
+  footer a,
+  footer small {
+    color: white;
+  }
 }

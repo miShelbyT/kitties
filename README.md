@@ -24,7 +24,7 @@ If you would like to run this application, you'll need to do the following:
 
 If you would like to contribute to this tiny but pretty darned cute project, please submit a pull request. 
 <p align="center">
-  <img src="assets/screenshot.png" width="330" height="400">
+  <img src="assets/screenshot.png" width="400" height="350">
 </p>
 
 
