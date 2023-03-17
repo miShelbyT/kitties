@@ -22,7 +22,7 @@ NewCatImgBtn.classList.add('btn', 'text')
 factIcon.classList.add('btn', 'icon')
 imgIcon.classList.add('btn', 'icon')
 
-kitties.src = "the-lucky-neko-uePn9YCTCY0-unsplash.jpg"
+kitties.src = "assets/the-lucky-neko-uePn9YCTCY0-unsplash.jpg"
 kitties.alt = "kittens on the floor"
 shoutOut.textContent = 'Cute cat pics from '
 credit.href =  "https://unsplash.com/"

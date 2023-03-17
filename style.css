@@ -52,7 +52,7 @@ body {
 
 .image {
   position: absolute;
-  max-height: 970px;
+  max-width: 970px;
   top: 20%;
   left: 5%;
   width: 90%;
