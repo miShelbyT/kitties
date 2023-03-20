@@ -35,7 +35,10 @@ imgIcon.innerText = "\u{1F408} CAT IMAGE"
 factDiv.prepend(today, title, catFact, NewFactBtn, NewCatImgBtn, factIcon, imgIcon)
 document.querySelector('footer').append(shoutOut, credit)
 
+
 // using netlify function to fetch unsplash img
+
+// NOTE: the configuration of this fetch will not work if you're not using netlify to deploy but the solution for this is simple. make sure you get an API Key from Unsplash (hide/save it to a separate config file), comment out line 43 and replace it with a fetch request to unsplash that interpolates your API key.
 const fetchCatPic = async () => {
   const resp = await fetch('/.netlify/functions/fetch-unsplash')
   const result = await resp.json()
