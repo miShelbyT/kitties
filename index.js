@@ -54,14 +54,14 @@ const fetchMeme = async () => {
 }
 
 NewFactBtn.addEventListener("click", fetchMeme)
-NewFactBtn.addEventListener("touchstart", fetchMeme)
+NewFactBtn.addEventListener("touchstart", fetchMeme, {passive: true})
 factIcon.addEventListener("click", fetchMeme)
-factIcon.addEventListener("touchstart", fetchMeme)
+factIcon.addEventListener("touchstart", fetchMeme,{passive: true})
 
 NewCatImgBtn.addEventListener("click", fetchCatPic)
-NewCatImgBtn.addEventListener("touchstart", fetchCatPic)
+NewCatImgBtn.addEventListener("touchstart", fetchCatPic,{passive: true})
 imgIcon.addEventListener("click", fetchCatPic)
-imgIcon.addEventListener("touchstart", fetchCatPic)
+imgIcon.addEventListener("touchstart", fetchCatPic,{passive: true})
 
 fetchMeme()
 
