@@ -29,6 +29,6 @@ If you would like to contribute to this tiny but pretty darned cute project, ple
 
 ### 4. Note
 
-As per Favicon.io, emoji graphics are from the open source project Twemoji[https://twemoji.twitter.com/]. The graphics are copyright 2020 Twitter, Inc and other contributors and are licensed under CC-BY 4.0[https://creativecommons.org/licenses/by/4.0/]. 
+Emoji graphics are from the open source project Twemoji[https://twemoji.twitter.com/]. The graphics are copyright 2020 Twitter, Inc and other contributors and are licensed under CC-BY 4.0[https://creativecommons.org/licenses/by/4.0/]. 
 
 
