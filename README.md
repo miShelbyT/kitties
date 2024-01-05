@@ -27,4 +27,8 @@ If you would like to contribute to this tiny but pretty darned cute project, ple
   <img src="assets/screenshot.png" width="400" height="350">
 </p>
 
+### 4. Note
+
+As per Favicon.io, emoji graphics are from the open source project Twemoji[https://twemoji.twitter.com/]. The graphics are copyright 2020 Twitter, Inc and other contributors and are licensed under CC-BY 4.0[https://creativecommons.org/licenses/by/4.0/]. 
+
 
